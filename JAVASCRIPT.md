@@ -38,4 +38,14 @@ useful because it makes a comparison statement easily evaluate if a variable has
 
 Typically, JS doesnt have global variables, but the Document Object Model does (such as the window object or the DOM object.) Using globals in programming is one of the worst standards; they're easily manipulated, they can be affected by anything, and it's risky. People try to make variables global because it's easy, but most of the time it's unnecessary. 
 
-###
+### this
+
+The ```this``` keyword allows us to access our current context (for intstance, in the js document itself, the context is the window object). this is typically used in object oriented programming to access properties and methods, and properties within methods. If you wanted to access a property of an object within the object, you'd do so by using ```this.``` because it specificies the scope the property is in. It is worth noting that methods defined with arrow functions don't access the scope the same way (values will likely return undefined).
+
+### == vs ===
+
+== is a quality operator where only the value is checked for equivalency. The === operator (strictly equals) checks the value and the data type, which is essentially what the == (double equals) does for most other programming languages. I prefer the strictly equals operator because stricter settings in the code typically yields better
+production with the elimination of bugs. ESLint and TSLint (tools for identifying problematic code,) use === for this reason.
+
+### coersion 
+
