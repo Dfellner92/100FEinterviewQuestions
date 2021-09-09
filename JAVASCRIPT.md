@@ -49,3 +49,14 @@ production with the elimination of bugs. ESLint and TSLint (tools for identifyin
 
 ### coersion 
 
+Coersion has two types essentially, implicit and explicit. Say you were to add 
+```javascript 2 + 3 + '7'```, the returned value would be 57 as a string, because it would add the number types and then concatinate the number and character string into a string value. Explicit coersion occurs if we were to use the Number or String object to yield the data type differently than how it was defined, or at least passed in to the object as an argument. Example would be ```console.log(typeof String(5));```
+which would yield string, because the value is now ```'5'``` despite being passed to the object as ```5```
+
+### typeof
+
+will check the data value of the type you're passing. ```22``` will give number, ```'22'``` will give string. Arrays will give objects. To check if the object is specifically an array you need to use the isArray method in the Array prototype. Another 'trip up' would be if you checked the typeof null it would yield an object but if you used the ```instanceof``` operator it would yield false. 
+
+### delete
+
+
