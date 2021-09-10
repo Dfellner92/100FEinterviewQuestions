@@ -59,4 +59,21 @@ will check the data value of the type you're passing. ```22``` will give number,
 
 ### delete
 
+The delete keyword allows for the deletion of a property of an object (the value of the property and the property itself). The delete keyword is typically not best practice to use because by needing to use it, it shows that the application is fragile
+
+### object notation
+
+The two notations to access objects are dot and bracket notations. If we had an object ```identity``` that had a property of ```firstName```, we could access the value by storing ```identity.firstName``` in a variable. Additionally, you could access it with bracket notation, but this wouldn't be advised, as bracket notation is best used for passing in a variable, for instance, if you were to loop through and check the values in an object (object.property would return undefined because it would be looking for a property called property.) Lints (ES and TS) both prefer dot notation as it is stricter.
+
+### Strict mode
+
+Helps enforce best standards and practices, but overall has been deprecated by linters. To use strict mode, ```'use strict'``` must be at the top of the javascript document. Strict mode prevents global variables from being assigned, and prevents deleting keys and duplicate names from parameters
+
+### anonymous functions
+
+anonymous functions are functions that are stored in a variable and don't have their own name. They can still be called just like normally defined functions.
+
+### callbacks
+
+Callbacks (aka higher order functions) are functions that are passed and are called back to at a later time. For instance, a callback is passed into the map method that takes in the individual elements of the array being mapped. The purpose of the callback function is to then manipulate each element. Alternatively, you could pass in a function that was written into the map method which can do what the typical callback inside the map method would do, and this also works as a callback.
 
