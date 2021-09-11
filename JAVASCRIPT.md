@@ -122,4 +122,16 @@ Better ways include assigning a variable to two brackets, or using a higher orde
 
 Undefined is the value of a variable that has no value, where as null is an empty value assigned to a variable. Typically, an undefined value will be yielded if logic is faulty, where null is specifically assigned to a variable with the purpose it to have that empty value. It should be noted that an undeclared value is one that tries to access a variable that hasn't been declared and doesn't exist.
 
-###
+### 0.2 + 0.1
+
+adding these floating point numbers in javascript won't return 0.3 as expected. Instead, there will be a series of zeros after the 3 and eventually there will be a 4. This is one of the weird behaviors of javascript math which is definitely imperfect. You can use the toFixed method from the Math object and pass 1 to get 0.3 exactly.
+
+### instanceof
+
+The ```instanceof``` operator can be used to check if an object created is an instance of a particular prototype. If you checked if something was an instance of an object it would always return true, though it may also be also be an instance of another class.
+
+### IIFE
+
+### Maintaining state and local storage
+
+Local storage is a means of maintaining state in between browswer sessions by sending data to the browswer for storage. LocalStorage can use getItem, setItem, and the clear methods to manipulate the local storage properties. Should you wish to set JSON data in local storage as an object value, you'd need to use JSON.stringify to set and JSON.parse to retrieve. Worth mentioning other storage methods like session storage, cookies, and cache storage.
