@@ -112,4 +112,14 @@ For numbers, you want to avoid passing in magic numbers (specific values with no
 
 Theres the easy way to reassign the array to an empty array. But if you had to modify it (such as if the array was assigned to a const). In that case you could use a while loop ```while (arr.length > 0)```, set the array.length to 0, or use ```arr.splice(0, arr.length)```. To empty the array without reassigning the value would be to use the while loop and either pop or shift;
 
-### 
+### create arrays
+
+One way you don't want to create an array is to use the Array constructor ```new Array```, you can override properties and methods that are associated with the prototype. 
+
+Better ways include assigning a variable to two brackets, or using a higher order function (map, filter, reduce) to store the manipulated version of one array into a new variable. 
+
+### undefined vs null
+
+Undefined is the value of a variable that has no value, where as null is an empty value assigned to a variable. Typically, an undefined value will be yielded if logic is faulty, where null is specifically assigned to a variable with the purpose it to have that empty value. It should be noted that an undeclared value is one that tries to access a variable that hasn't been declared and doesn't exist.
+
+###
