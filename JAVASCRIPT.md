@@ -77,3 +77,39 @@ anonymous functions are functions that are stored in a variable and don't have t
 
 Callbacks (aka higher order functions) are functions that are passed and are called back to at a later time. For instance, a callback is passed into the map method that takes in the individual elements of the array being mapped. The purpose of the callback function is to then manipulate each element. Alternatively, you could pass in a function that was written into the map method which can do what the typical callback inside the map method would do, and this also works as a callback.
 
+### closures 
+
+Closures are a way of manipulating a variable without storing it in a global context. Say we have an anonymous function defined with a variable ```count``` defined within it. 
+```javascript
+const add = (() => {
+    let count = 0;
+})
+```
+by returning another function that increments the count and returns the count, all within the initial function, upon calling the inital function, the incremented account will be returned. 
+```javascript
+const add = (() => {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  }
+})();
+
+console.log(add()); // 1
+console.log(add()); // 2
+```
+it should also be noted that if the inital function is defined using an arrow, it should be wrapped inside parenthesis, and that a second set of parenthesis are needed to invoke the function when it is called later.
+
+### naming & standards
+
+Variables should typically be named in camelCase. Booleans should also begin with the "is-" or "has-" prefix. For function calls that return something, it makes sense to being it with a verb (update, get.) It could be worth noting that Hungarian casing (naming prefix is the data type) is very outdated, typescript and js intellisense takes care of these. For CSS, try to add as few selectors as possible, dashes are common practice, as are using block element modifiers, which are classes extended with a -- that can alter the behavior of the element and the child element classes.
+
+For naming a returned number, say a ```function factorialize(num)``` existed that took in a number and returned its factorial. you might want the return variable to be factorialTotal or factorialProduct. For a date, if you were returning a new Date object you might call it todaysDate. On the other hand, if you were to name keys in a class, you'd want them to be very direct (name, age, date).
+
+For numbers, you want to avoid passing in magic numbers (specific values with no context). This might be a good time to use camelcase to assign the number to a constant.
+
+### empty arrays
+
+Theres the easy way to reassign the array to an empty array. But if you had to modify it (such as if the array was assigned to a const). In that case you could use a while loop ```while (arr.length > 0)```, set the array.length to 0, or use ```arr.splice(0, arr.length)```. To empty the array without reassigning the value would be to use the while loop and either pop or shift;
+
+### 
