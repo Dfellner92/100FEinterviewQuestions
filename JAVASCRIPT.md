@@ -148,4 +148,12 @@ The same prinicple can be used to have a seperate object destructure the origina
 
 The rest operator doesnt have too many uses. It can turn a series of numbers that are passed into a function as an argument into an array by using three dots before the argument in the function parentheses. Much more commonly used is the spread operator, which can unpack arrays and objects. If you called a function that took in one argument as a variable,  should you be passing in an object where the function is called, you could then assign the variable passed into the objects definition to a new variable, and by using the spread operator before it you will have the original object that was argued in the call. 
 
+### Arrow function
+
+Arrow functions are ES6 functions that allow you to simplify the syntax. They're very easy to use as callbacks, particularly within higher order functions. Issues with arrow functions include binding, or lack there of, using the this keyword within an object.
+
+### NaN
+
+NaN means one of two things: you tried to parse something that wasn't a number, or an operation occured that the programming language couldn't handle ( 0/0). If you were to check the typeof NaN, it would return number so you'd have to use the ```isNaN``` method.
+
 ###
