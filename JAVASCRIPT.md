@@ -135,3 +135,17 @@ The ```instanceof``` operator can be used to check if an object created is an in
 ### Maintaining state and local storage
 
 Local storage is a means of maintaining state in between browswer sessions by sending data to the browswer for storage. LocalStorage can use getItem, setItem, and the clear methods to manipulate the local storage properties. Should you wish to set JSON data in local storage as an object value, you'd need to use JSON.stringify to set and JSON.parse to retrieve. Worth mentioning other storage methods like session storage, cookies, and cache storage.
+
+### HTML APIs 
+
+### Destructuring arrays and objects
+
+Destructuring allows for code to be easier to read and shortens the code length. One way to destructure an array is to define a constant as an array, with each element named appropriately for the indexed element it corresponds with. These new array elements can be interpolated from strings, used in template literals, etc. 
+
+The same prinicple can be used to have a seperate object destructure the original; you can pull out key names into the new object so you dont have to use dot or bracket notation later. Additionally, you could assign aliases to the destructured keys like ```{ firstName: fn }```
+
+### Rest and Spread Operator
+
+The rest operator doesnt have too many uses. It can turn a series of numbers that are passed into a function as an argument into an array by using three dots before the argument in the function parentheses. Much more commonly used is the spread operator, which can unpack arrays and objects. If you called a function that took in one argument as a variable,  should you be passing in an object where the function is called, you could then assign the variable passed into the objects definition to a new variable, and by using the spread operator before it you will have the original object that was argued in the call. 
+
+###
