@@ -156,4 +156,12 @@ Arrow functions are ES6 functions that allow you to simplify the syntax. They're
 
 NaN means one of two things: you tried to parse something that wasn't a number, or an operation occured that the programming language couldn't handle ( 0/0). If you were to check the typeof NaN, it would return number so you'd have to use the ```isNaN``` method.
 
+### Undeclared vs undefined
+
+An undeclared variable is a variable that doesn't exist but is attempted access to. An undefined variable is a declared variable that has on value, or is the property of an object but the property doesn't exist in that object.
+
+### DOM selectors
+
+In vanilla javascript, there are a number of DOM selectors, such as ```getElementById()```, which will select a specific id, ```getElementByTagName()```, which will return an iterable. Finding elements by class name, as well as elements found by CSS selector, will also return an iterable. It should be known that the ```querySelector()``` can return any element, but it is much slower than more specific selectors
+
 ###
