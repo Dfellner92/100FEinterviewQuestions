@@ -164,4 +164,18 @@ An undeclared variable is a variable that doesn't exist but is attempted access 
 
 In vanilla javascript, there are a number of DOM selectors, such as ```getElementById()```, which will select a specific id, ```getElementByTagName()```, which will return an iterable. Finding elements by class name, as well as elements found by CSS selector, will also return an iterable. It should be known that the ```querySelector()``` can return any element, but it is much slower than more specific selectors
 
-###
+### copying an object
+
+If you were to define an object, set a new variable with a value equal to the name of the initial object, and then compared the two variables using the ```is``` method, it'd return true. 
+
+But if we wanted the objects to be separate, we could strigify the object and then parse it: ```const user2 = JSON.parse(JSON.strigify(user));``` At this point, using the ```is``` method would return false because user2 and user are two different objects. With ES6, this method becomes much easier as the spread operator allows for destructuring the original array within brackets to be assigned to a new variable.
+
+### comparing two objects
+
+Simply comparing two identically declared objects (user1, userr2) will return false if using, say, ===. If the property names are identical and in the same order of one another, you stringify both objects and the return should be true. 
+
+However, if you were to compare two objects with identical key value pairs but in different orders, you'd have to create a more complex function that a) gets property names of both obj (getOwnPropertyNames())   b) returns false if the lengths are differnt    c) has a loop that assigns the looped values of the first obj to a variable and then checks if that property is not in both obj (returning false).    d) returns true if b) and c) dont return false
+
+Nested arrays and nested objects would need to go much deeper.
+
+### Service workers
