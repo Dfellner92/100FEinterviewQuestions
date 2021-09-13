@@ -179,3 +179,9 @@ However, if you were to compare two objects with identical key value pairs but i
 Nested arrays and nested objects would need to go much deeper.
 
 ### Service workers
+
+The main point of service workers is to catch things before they fire off. Say if you had a caching strategy on the client side where you cached items that aren't going to change, like fonts or the web manifest, you could use it also to have a timer for API calls for retrieval so you don't have to communicate with the server as much. Caching with a service worker allows for offline mode capability in part because of this, allowing them to perform more like native apps.
+
+### removing duplicates
+
+There are a few ways to go about this. One is to create a ```new Set ()``` and then call forEach() and add() the values to the set. Or you could create an empty array and then do the forEach(), using an if statement to check if the empty array doesnt include each value of the original array and then pushing it to the array that was initially empty.
