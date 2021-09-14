@@ -19,4 +19,7 @@ setTimeout() and setInterval() are the two main methods for timers in Javascript
 A promise is a way of handling the response from asynchonous code, such as a GET request from an API. They're often used for user input. There is always an accepted case and a rejected case. Either way, one will resolve, so it would be worth using these within a try catch block.
 
 
-###
+### Async / Await
+
+If you add the ```async``` keyword onto the beginning of a defined function, that function will now return a promise. By wrapping the await response(s) in a try catch block, we can then handle any errors, as the errors can also be returned as a promise.
+
