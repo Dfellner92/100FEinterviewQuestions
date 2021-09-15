@@ -45,3 +45,11 @@ Create a div with an id selector ```#ciricle``` attached to it. In the styleshee
 ### semantic HTML
 
 Semantic elements were introduced in HTML5 with the aim to have more specific tag names that would replace id selector conventions that had become standardized. These included ```<div id="footer">``` or ```<div id="section">``` and are now replaced with ```<nav>``` and ```<footer>``` tags. These better named containers help improve workflow as well as SEO.
+
+### head tag
+
+The head tag is used to store external dependencies in a ```.html``` file, like a stylesheet or a script file. It also is used to store ```<meta>``` tags that contain information about the title, if you're going to allow responsive functionality, containing SEO and more. It should be worth noting that the head tag doesn't render any features to the DOM.
+
+### meta tags
+
+```<meta charset="UTF-8">``` is used to define the characters we're using. ```<meta description="my seo here...">``` is where the SEO keywords can go, you could also use ```keyword=" "```. ```<meta name="viewport" content="width=device-width, initial-scale=1.0">``` is a very common tag that frames the users view of the content. ```width``` controls how the view is scaled for the device used, and ```initial-scale``` indicates that we're not zooming in. 
