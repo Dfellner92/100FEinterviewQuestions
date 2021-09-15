@@ -16,4 +16,12 @@ A CSS file typically contains defined ```selctors``` (id, classes, and tags with
 
 a class is denoted by the ```.``` prefix, an id is denoted by the ```#``` prefix. id is meant to be more specific than a class, used only for one (although you could use it for more than one but most would consider this bad practice) Due to id having a higher specificity, it can overwrite class styles.
 
+### CSS specificity
+
+CSS specificity deals with what selectors get applied to certain elements based on inheritance. If you had a ```*``` (universal selector), with a ```color: red``` declaration, it'd be overruled by the color declaration of an h1 selector. That would be overruled by the class selctor, which would be overruled by the id selector, and then the most specific would be inline styling. 
+
+### responsive design
+
+Media queries allow us to have breakpoints in the browser width that allow for style changes. There is also the more outdated bootstrap 12 column grid, but now CSS flexbox allows us to have these dimensions built in natively.
+
 ###
