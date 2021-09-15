@@ -32,4 +32,16 @@ The box model is how certain properties work around each element. It begins with
 
 Why would you use a preprocessor like SASS? It allows for variables and nesting of variables which allow for cleaner code. Being able to see the scope helps legibility. Mixins allow for code to be reused much easier as rules can be added to new selectors much quicker and cleaner.
 
-### 
+### Pseudo class
+
+Additional selector type that orders elements around pages or affects user interactions. Pseudo classes are denoted by the colon in front of various classes like ```hover```. They can also be used to make every nth row colored differently, for instance.
+
+### Pseudo elements
+
+### Create a circle
+
+Create a div with an id selector ```#ciricle``` attached to it. In the stylesheet, create a selector class that gives #circle background-color of red, height: 100px, width: 100px; and finally, a border-radius of 50%.
+
+### semantic HTML
+
+Semantic elements were introduced in HTML5 with the aim to have more specific tag names that would replace id selector conventions that had become standardized. These included ```<div id="footer">``` or ```<div id="section">``` and are now replaced with ```<nav>``` and ```<footer>``` tags. These better named containers help improve workflow as well as SEO.
