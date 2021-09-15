@@ -24,4 +24,12 @@ CSS specificity deals with what selectors get applied to certain elements based 
 
 Media queries allow us to have breakpoints in the browser width that allow for style changes. There is also the more outdated bootstrap 12 column grid, but now CSS flexbox allows us to have these dimensions built in natively.
 
-###
+### CSS box model
+
+The box model is how certain properties work around each element. It begins with the element, the padding surrounding it, then the border, then the margin, which moves it away from other box models.
+
+### CSS preprocessors
+
+Why would you use a preprocessor like SASS? It allows for variables and nesting of variables which allow for cleaner code. Being able to see the scope helps legibility. Mixins allow for code to be reused much easier as rules can be added to new selectors much quicker and cleaner.
+
+### 
