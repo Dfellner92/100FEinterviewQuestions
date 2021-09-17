@@ -70,3 +70,11 @@ These are essentially CSS variables, the name of each is defined with a ```--```
 
 Block element modifiers are one way to organize CSS class names. The block is a general element that can stand on its own. The elements have no meaning on their own and are semantically tied to their blocks. Modifiers allow for small things to change within the element. Typically, the naming convention is: ```block__element--modifier```.
 Applying atomic design is another means of having a top-down method of CSS rendering.
+
+### Install a font
+
+One way to go about this is to add the fonts stylesheet link to the head section of the html file. You could also use the ```@import url('')``` method at the top of the styles.
+
+### Add CSS
+
+You could add CSS inline to an element with the ```style=""``` attribute, but this is not best practice. You could have the ```<style>``` tag in the head but this also causes separation of concerns issues. Finally, there is what is considered best CSS practice which is to have an external stylesheet(s) where we could import to the html with a link tag in the head and an ```href``` to the ```styles.css``` file.
