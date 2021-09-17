@@ -78,3 +78,15 @@ One way to go about this is to add the fonts stylesheet link to the head section
 ### Add CSS
 
 You could add CSS inline to an element with the ```style=""``` attribute, but this is not best practice. You could have the ```<style>``` tag in the head but this also causes separation of concerns issues. Finally, there is what is considered best CSS practice which is to have an external stylesheet(s) where we could import to the html with a link tag in the head and an ```href``` to the ```styles.css``` file.
+
+### CSS grid vs flexbox
+
+Both can handle CSS responsive design well. CSS grid allows you to order items easier, taking both a horizontal and vertical approach. Flexbox is much better for single direction. Grid is easier to apply to the full scope of the application while Flexbox allows us to organize the pieces of individual components easier. 
+
+### CSS libraries
+
+The pros of using a library are if you aren't the best at CSS styling (and the project allows for the use of a library) it could make the tasks easier, or if you're designing a back-office tool, where the designs don't matter as much. Bootstrap, for instance, also has a javascript library as well that works in conjunction with many of their CSS components. Using a library can also allow you to do away with a global stylesheet altogether should you choose to not have any custom styles. 
+
+The downsides to using a library include having to use a lot of classes and making the html "bulky". A lot of developers also rely heavily on libraries and this can make their custom styling skills diminish.
+
+### Z index
