@@ -53,3 +53,12 @@ The head tag is used to store external dependencies in a ```.html``` file, like 
 ### meta tags
 
 ```<meta charset="UTF-8">``` is used to define the characters we're using. ```<meta description="my seo here...">``` is where the SEO keywords can go, you could also use ```keyword=" "```. ```<meta name="viewport" content="width=device-width, initial-scale=1.0">``` is a very common tag that frames the users view of the content. ```width``` controls how the view is scaled for the device used, and ```initial-scale``` indicates that we're not zooming in. 
+
+### div vs span
+
+```<span>``` tags are mainly for assigning classes or ids to specific points within a row. This is because span is an inline level element and ```<div>``` is a block level element.
+
+### accessability
+
+Accessability allows for companies to attract a bigger client base, and allow for easier access for people with disabilities. One way to do this is by applying an ```aria-label``` to tags, say a ```<button>``` that make it so an operating system can voice over the label and the tag.
+
