@@ -62,3 +62,11 @@ The head tag is used to store external dependencies in a ```.html``` file, like 
 
 Accessability allows for companies to attract a bigger client base, and allow for easier access for people with disabilities. One way to do this is by applying an ```aria-label``` to tags, say a ```<button>``` that make it so an operating system can voice over the label and the tag.
 
+### CSS custom properties
+
+These are essentially CSS variables, the name of each is defined with a ```--``` before the name of the property. Typically, the variables are defined in a ```:root {}``` selector for global scope. If you were to use the same heading color for multiple tags, you could define ```--headingColor: green``` within the root selector, and then on each selector you want to apply green, you could have the declaration read ```color: var(--headingColor)```
+
+### CSS principles
+
+Block element modifiers are one way to organize CSS class names. The block is a general element that can stand on its own. The elements have no meaning on their own and are semantically tied to their blocks. Modifiers allow for small things to change within the element. Typically, the naming convention is: ```block__element--modifier```.
+Applying atomic design is another means of having a top-down method of CSS rendering.
