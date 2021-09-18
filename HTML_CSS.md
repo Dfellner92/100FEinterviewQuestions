@@ -90,3 +90,6 @@ The pros of using a library are if you aren't the best at CSS styling (and the p
 The downsides to using a library include having to use a lot of classes and making the html "bulky". A lot of developers also rely heavily on libraries and this can make their custom styling skills diminish.
 
 ### Z index
+
+The Z index allows us to lay items on top of one another. Say a background takes up the entire screen despite being responsive; the Z-index will allow for the other components to be placed in front.
+
