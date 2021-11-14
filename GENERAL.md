@@ -37,4 +37,8 @@ There are several ways to debug your code. Using the browsers inspector gives ac
 
 There is also writing unit tests to tell if something has broken along the way. In react, these tests can be executed with the jest testing library to show if a component behaves as it should.
 
-###
+### Web Pages
+
+What happens when you hit enter after typing in a url on a browser? The URL is then used to find the server where the website is hosted and returns the dependencies. Authentication could play a part in this process. Once granted access, the index page will fire off dependencies such as image sources, javascript pages, or style sheets.
+
+
