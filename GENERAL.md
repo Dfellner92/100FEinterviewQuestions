@@ -48,3 +48,7 @@ Recursion is when you have a function that calls itself until it no longer can, 
 ### OOP
 
 Object oriented programming is a type of programming procedure for structuring our code. It allows us to have an object and class structure to encapulate our logic, which includes private and public methods; from there we can abstract our classes and showcase what we want the user to see and what we dont. Another key piece of OOP is inheritence, where, similar to dependency injection, new classes can inherit some traits from another class, which allows for code not to be redone. 
+
+### Functional Programming
+
+Functional programming has 2 main objectives. One is pure functions, which operate the same way every time (there is nothing outside of the scope that would alter this). The other deals with state management, meaning the ability of a function to update a global variable or a state. 
