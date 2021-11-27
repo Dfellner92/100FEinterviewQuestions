@@ -136,7 +136,13 @@ The ```instanceof``` operator can be used to check if an object created is an in
 
 Local storage is a means of maintaining state in between browswer sessions by sending data to the browswer for storage. LocalStorage can use getItem, setItem, and the clear methods to manipulate the local storage properties. Should you wish to set JSON data in local storage as an object value, you'd need to use JSON.stringify to set and JSON.parse to retrieve. Worth mentioning other storage methods like session storage, cookies, and cache storage.
 
-### HTML APIs 
+### HTML 5 APIs
+
+Some: 
+  Local storage: being able to maintain state
+  Geolocation: several websites want to put a    map on with their location.
+  Webworkers: a Javascript running in the background, without affecting the performance of the page.
+Talk also about 3rd party APIs at this time.
 
 ### Destructuring arrays and objects
 

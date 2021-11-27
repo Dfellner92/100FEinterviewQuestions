@@ -52,3 +52,4 @@ Object oriented programming is a type of programming procedure for structuring o
 ### Functional Programming
 
 Functional programming has 2 main objectives. One is pure functions, which operate the same way every time (there is nothing outside of the scope that would alter this). The other deals with state management, meaning the ability of a function to update a global variable or a state. 
+
