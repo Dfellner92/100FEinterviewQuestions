@@ -43,6 +43,7 @@ Additional selector type that orders elements around pages or affects user inter
 
 ### Pseudo elements
 
+
 ### Create a circle
 
 Create a div with an id selector ```#ciricle``` attached to it. In the stylesheet, create a selector class that gives #circle background-color of red, height: 100px, width: 100px; and finally, a border-radius of 50%.
