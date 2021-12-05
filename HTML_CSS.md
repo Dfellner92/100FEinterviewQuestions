@@ -43,6 +43,9 @@ Additional selector type that orders elements around pages or affects user inter
 
 ### Pseudo elements
 
+- Pseudo classes reflect state upon page, pseudo elements they're dealing with the actual elements on the page (not things like an anchor tag)
+- denoted by ```::```, not ```:```
+- ```p::before``` or ```p::after``` are the key ones, can set ```content``` to inject before what is in the ```p``` tag
 
 ### Create a circle
 
