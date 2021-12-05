@@ -12,6 +12,11 @@ A CSS file typically contains defined ```selctors``` (id, classes, and tags with
 
 ### Data attributes
 
+- Existed since IE 7/8, exists in all modern browsers
+- Allows for data keys to be passed from the template to javascript
+- Big use: allows for help on test driven dev: 
+`data-test` can be used so that Quality assurance tools like cypress or mocha can use hooks associated with template elements without using classes or ids. 
+
 ### class vs id
 
 a class is denoted by the ```.``` prefix, an id is denoted by the ```#``` prefix. id is meant to be more specific than a class, used only for one (although you could use it for more than one but most would consider this bad practice) Due to id having a higher specificity, it can overwrite class styles.
