@@ -88,6 +88,10 @@ One way to go about this is to add the fonts stylesheet link to the head section
 
 You could add CSS inline to an element with the ```style=""``` attribute, but this is not best practice. You could have the ```<style>``` tag in the head but this also causes separation of concerns issues. Finally, there is what is considered best CSS practice which is to have an external stylesheet(s) where we could import to the html with a link tag in the head and an ```href``` to the ```styles.css``` file.
 
+### Vendor Prefix
+
+
+
 ### CSS grid vs flexbox
 
 Both can handle CSS responsive design well. CSS grid allows you to order items easier, taking both a horizontal and vertical approach. Flexbox is much better for single direction. Grid is easier to apply to the full scope of the application while Flexbox allows us to organize the pieces of individual components easier. 
@@ -101,4 +105,6 @@ The downsides to using a library include having to use a lot of classes and maki
 ### Z index
 
 The Z index allows us to lay items on top of one another. Say a background takes up the entire screen despite being responsive; the Z-index will allow for the other components to be placed in front.
+
+### Components
 

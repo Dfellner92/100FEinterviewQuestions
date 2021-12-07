@@ -53,3 +53,12 @@ Object oriented programming is a type of programming procedure for structuring o
 
 Functional programming has 2 main objectives. One is pure functions, which operate the same way every time (there is nothing outside of the scope that would alter this). The other deals with state management, meaning the ability of a function to update a global variable or a state. 
 
+
+### Components
+
+- Recent editions of JS and HTML have added web components, however
+- most times components are used will be in the context of a frontend framework such as react or vue
+- the concept: you have HTML template that gets referenced by a tag name that youve defined.
+- you can pass functions to these templates in their tags, or pass data in the form of state 
+- The key to these components is their reusability.
+- a "nav-tag" component could be used to design and handle the event of a navigation bar link, and it could be used for each tag
