@@ -62,3 +62,11 @@ Functional programming has 2 main objectives. One is pure functions, which opera
 - you can pass functions to these templates in their tags, or pass data in the form of state 
 - The key to these components is their reusability.
 - a "nav-tag" component could be used to design and handle the event of a navigation bar link, and it could be used for each tag
+
+### Agile and Scrum
+
+- Generally work in 2 week sprints
+- Try to have a velocity based off the history, sometimes that is increased to meet goals.
+- morning meet: stand up to share accomplishments previous day, try to listen to how we can help
+- Make sure JIRA tickets are understood, and that the reasoning behind their point values is understood as well. 
+- sprint reviews work to showcase what has been done, and how the team can improve. 
