@@ -8,7 +8,10 @@ When working with external data, such as that from an exernal JSON file with an 
 
 ### Synchronous Code v Async
 
-Synchronous code goes from top to bottom, each piece of code runs and then the next piece does. Asynchronous code flows similarly except certain lines of code will then run separately and then return something like an API response - which takes longer - while the rest of the code flow continues. Unless async/await is used, there will be different scripts running at once. 
+- Synchronous code goes from top to bottom.
+- When code is asynchronous, it will take a bit of time to complete a task, such as a POST for user input or a GET from an API. 
+- asynchronous code runs almost as a second thread (although js is a single threaded language)
+- using async/await can allow for handling of asynchronous tasks to avoid multiple scripts running simultaneously.
 
 ### Timers
 

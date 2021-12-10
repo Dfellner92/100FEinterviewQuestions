@@ -5,11 +5,10 @@
 
 ### Const && let vs var
 
-Variables declared with ```var``` adhere to lexical scope. This means that should a var be declared in a falsy statement (inside an if block for example) then it would render ```undefined```. The reason for this is that in lexical scope, the variable gets hoisted as if it was declared at the top of the function. 
-
-```let``` adheres to block scope, where it is limited to the code block it is declared in (so it doesnt get hoisted.) let can also be reassigned just like var. However, const cannot be reassigned, and it can't be manipulated as far as its primitive types. However, non primitives like arrays can be manipulated.
-
-
+- const and let added ES6
+- let allows you to declare variables that are limited to the scope of a block statement, can be reassigned.
+- const means that the variable can't be reassigned. However, in a non-primitive, it can be mutated.
+- var uses lexical scope, meaning the variable is hoisted to the global level. This creates problems as a variable declared within an if statement could be accessed outside of the if statement (in terms of frequently used variables like indexes, this would cause issues.)
 
 ### Pass by reference vs Pass by value
 
