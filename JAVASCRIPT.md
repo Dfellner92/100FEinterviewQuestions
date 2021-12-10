@@ -1,19 +1,15 @@
 ### Javascript Data Types
 
-In terms of Data types, you have the primative data types, 
-which consist of the boolean (true, false,) numbers - which could be
-any type (floating point, whole,) null, which is an empty value that is 
-assigned, undefined, which has no value, and strings. Then there are
-non primitives, which include arrays and objects, (yes, arrays are objects 
-but they operate and are manipulated differently.) Maps and Sets would be
-said to be objects if used ```typeof``` but they are also distinct data
-structures, if not data types. 
+- Javascript primitives: boolean (true or false), numbers (whole, floating point...), null (empty value, user assigned), strings, undefined (no value)
+- nonprimitives: objects. Arrays (and in ES6 sets and maps) would yield ```object``` with the ```typeof``` operator, and while their data type might be object, it is worth noting these different data structures have different properties and methods associated with them.
 
 ### Const && let vs var
 
 Variables declared with ```var``` adhere to lexical scope. This means that should a var be declared in a falsy statement (inside an if block for example) then it would render ```undefined```. The reason for this is that in lexical scope, the variable gets hoisted as if it was declared at the top of the function. 
 
 ```let``` adheres to block scope, where it is limited to the code block it is declared in (so it doesnt get hoisted.) let can also be reassigned just like var. However, const cannot be reassigned, and it can't be manipulated as far as its primitive types. However, non primitives like arrays can be manipulated.
+
+
 
 ### Pass by reference vs Pass by value
 
