@@ -23,7 +23,6 @@ Map is used to create a new array and potentially modify its value. Filter is us
 Reduce allows for more specificity than map and filter in that it can return a single value, but also any values. The reduce method takes in the accumulator argument, which is set to an initial value that must be given in the function, and the value, which is the current value within the array. The accumulator also needs to be returned or else it will be reset to the given value in the function.
 
 ### Falsy Values
-
 Falsy values are values that equate to false in a logical statement, such as
 that used in an ```if``` statement. These values include false, null, 
 undefined, NaN, and 0, and and empty string. The 0 falsy value is particcularly
